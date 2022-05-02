@@ -39,7 +39,7 @@ Every cluster is different. Always consult your own institutions. The most commo
 ## Networking
 
  * [sshuttle](https://github.com/sshuttle/sshuttle) - This program can help if you need to connect from outside of campus and the VPN doesn't get you where you want.
- * [lsyncd](https://github.com/lsyncd/lsyncd) - A program to sync your files to a remote server, e.g. a HPC login node. This allows a workflow where you can develop and run smoke tests locally, and then switch to HPC for full runs.
+ * [lsyncd](https://github.com/lsyncd/lsyncd) - A program to sync your files to a remote server, e.g. a HPC login node. This allows a workflow where you can develop and run smoke tests locally, and then seemlessly switch to HPC for full runs.
 
 ## Fancy shell sessions
 
