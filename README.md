@@ -1,8 +1,8 @@
-:sungalsses: Awesome institutional HPC :sungalsses:
+# 😎 Awesome institutional HPC 😎
 
-This list is made to help you get a comfortable . Sometimes making do with less tools is better for operational complexity, on the other hand these tools have generally been written to solve real 
+This list is made to help you get a productive development environment in HPC. Sometimes making do with less tools is better for operational complexity, on the other hand these tools have generally been written to solve real problems, so it is worth at least knowing that they exist. Tools targetted at institutional HPC tend to have poor visibility since traditionally all tools are provided directly by the operator of the cluster, causing effort to be siloed. This 
 
-# Provided for you
+## Tools provided for you
 
 Every cluster is different. Always consult your own institutions. The most common tools across instituional HPC clusters are:
 
@@ -10,18 +10,18 @@ Every cluster is different. Always consult your own institutions. The most commo
  * [SLURM](https://slurm.schedmd.com/slurm.html) to administer the cluster queues and provide CLI programs for interacting with it
  * [Singularity](https://sylabs.io/) to allow running software from containers (including conversion from Docker)
 
-# Guides
+## Guides
 
  * Your own institution's guides and trainings
  * [Aalto Scientitic Computing ](https://scicomp.aalto.fi/)
 
-# Containers
+## Containers
 
  * [Singularity](https://sylabs.io/) -  Must be installed by your cluster administrator 
  * [udocker](https://github.com/indigo-dc/udocker) - Docker CLI, which does not require action from your cluster administrator, but can use Singularity as a backend
  * [singreqrun](https://github.com/frankier/singreqrun/) - Shim to allow running programs from the host from within a Singularity container
 
-# SLURM wrappers and distributed computing frameworks
+## SLURM wrappers and distributed computing frameworks
 
  * [yaspi](https://github.com/albanie/yaspi) - A Python-based SLURM wrapper based on job arrays
  * [Snakemake](https://github.com/snakemake/snakemake) - File based processing pipeline framework with workflows written on Python but additional support for CLI programs, Julia and R  with SLURM support through either:
@@ -32,7 +32,12 @@ Every cluster is different. Always consult your own institutions. The most commo
  * [Ray](https://www.ray.io/) - Python-based distributed computing framework including tools for hyperparamter search
    * SLURM support through [yaspi](https://github.com/albanie/yaspi)
 
-# Fancy shell sessions
+## Networking
+
+ * [sshuttle](https://github.com/sshuttle/sshuttle) - This program can help if you need to connect from outside of campus and the VPN doesn't get you where you want.
+ * [lsyncd](https://github.com/lsyncd/lsyncd) - A program to sync your files to a remote server, e.g. a HPC login node. This allows a workflow where you can develop and run smoke tests locally, and then switch to HPC for full runs.
+
+## Fancy shell sessions
 
  * [mosh](https://mosh.org/) - Drop free, low latency faked SSH sessions
  * [EternalTerminal](https://github.com/MisterTea/EternalTerminal) - Another approach to drop free SSH sessions
