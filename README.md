@@ -1,6 +1,6 @@
 # 😎 Awesome institutional HPC 😎
 
-This list is made to help you get a productive development environment in HPC. Sometimes making do with less tools is better for operational complexity, on the other hand these tools have generally been written to solve real problems, so it is worth at least knowing that they exist. Tools targetted at institutional HPC tend to have poor visibility since traditionally all tools are provided directly by the operator of the cluster, causing effort to be siloed. Hopefully this list helps a bit!
+This list is made to help you get a productive development environment as a user of institutional HPC. Sometimes making do with less tools is better for operational complexity, on the other hand these tools have generally been written to solve real problems, so it is worth at least knowing that they exist. Tools targetted at institutional HPC tend to have poor visibility since traditionally all tools are provided directly by the operator of the cluster, causing effort to be siloed. Hopefully this list helps a bit!
 
 ## Tools provided for you
 
@@ -32,6 +32,9 @@ Every cluster is different. Always consult your own institutions. The most commo
    * [Guide at Software Carpentries incubator](https://carpentries-incubator.github.io/workflows-snakemake/)
  * [Ray](https://www.ray.io/) - Python-based distributed computing framework including tools for hyperparamter search
    * SLURM support through [yaspi](https://github.com/albanie/yaspi)
+ * [SEML](https://github.com/TUM-DAML/seml) - SEML: Slurm Experiment Management Library. Integration of the sacred experiment manager and SLURM.
+ * [slurmpy](https://github.com/brentp/slurmpy) - Small Python library for starting SLURM jobs
+ * [stubl](https://github.com/ubccr/stubl) - Utilities for SLURM including wrappers for job launching and reporting
 
 ## Networking
 
