@@ -1,6 +1,6 @@
 # 😎 Awesome institutional HPC 😎
 
-This list is made to help you get a productive development environment in HPC. Sometimes making do with less tools is better for operational complexity, on the other hand these tools have generally been written to solve real problems, so it is worth at least knowing that they exist. Tools targetted at institutional HPC tend to have poor visibility since traditionally all tools are provided directly by the operator of the cluster, causing effort to be siloed. This 
+This list is made to help you get a productive development environment in HPC. Sometimes making do with less tools is better for operational complexity, on the other hand these tools have generally been written to solve real problems, so it is worth at least knowing that they exist. Tools targetted at institutional HPC tend to have poor visibility since traditionally all tools are provided directly by the operator of the cluster, causing effort to be siloed. Hopefully this list helps a bit!
 
 ## Tools provided for you
 
