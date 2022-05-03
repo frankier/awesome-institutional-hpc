@@ -21,18 +21,25 @@ Every cluster is different. Always consult your own institutions. The most commo
  * [udocker](https://github.com/indigo-dc/udocker) - Docker compatible CLI, which does not require action from your cluster administrator, but can use Singularity as a backend if it's available.
  * [singreqrun](https://github.com/frankier/singreqrun/) - Shim to allow running programs from the host from within a Singularity container
 
-## SLURM wrappers and distributed computing frameworks
+## Workflow managers and  distributed computing frameworks
 
- * [yaspi](https://github.com/albanie/yaspi) - A Python-based SLURM wrapper based on job arrays
  * [Snakemake](https://github.com/snakemake/snakemake) - File based processing pipeline framework with workflows written on Python but additional support for CLI programs, Julia and R  with SLURM support through either:
    * Direct configuration using the `--cluster`` flag. See for example [this tutorial](https://carpentries-incubator.github.io/workflows-snakemake/09-cluster/index.html).
    * Using the [SLURM Snakemake profile](https://github.com/Snakemake-Profiles/slurm)
    * Using the KISS alternative [smk-simple-slurm](https://github.com/jdblischak/smk-simple-slurm)
    * Using [singslurm2](https://github.com/frankier/singslurm2) which allows Snakemake to spawn SLURM jobs from within a Singularity container
    * [Guide at Software Carpentries incubator](https://carpentries-incubator.github.io/workflows-snakemake/)
+   * Using its DRMAA support but this is not recoomended for SLURM since its own DRMAA support is not maintained
  * [Ray](https://www.ray.io/) - Python-based distributed computing framework including tools for hyperparamter search
    * SLURM support through [yaspi](https://github.com/albanie/yaspi)
+ * [Nextflow](https://www.nextflow.io/) - 
+   * SLURM suppor though [its built-in SLURM executor](https://www.nextflow.io/docs/latest/executor.html#slurm)  
+
+## SLURM wrappers and libraries
+
+ * [yaspi](https://github.com/albanie/yaspi) - A Python-based SLURM wrapper based on job arrays
  * [SEML](https://github.com/TUM-DAML/seml) - SEML: Slurm Experiment Management Library. Integration of the sacred experiment manager and SLURM.
+ * [pyslurm](https://github.com/PySlurm/pyslurm) - Python library for interfacing with SLURM
  * [slurmpy](https://github.com/brentp/slurmpy) - Small Python library for starting SLURM jobs
  * [stubl](https://github.com/ubccr/stubl) - Utilities for SLURM including wrappers for job launching and reporting
 
