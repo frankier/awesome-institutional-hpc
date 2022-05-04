@@ -6,55 +6,55 @@ This list is made to help you get a productive development environment as a user
 
 Every cluster is different. Always consult your own institutions. The most common tools across instituional HPC clusters are:
 
- * [lmod](https://lmod.readthedocs.io/en/latest/index.html) installed, which can allow you to load additional software. Just run `module spider` to see what's available.
- * [SLURM](https://slurm.schedmd.com/slurm.html) to administer the cluster queues and provide CLI programs for interacting with it
- * [Singularity](https://sylabs.io/) to allow running software from containers (including conversion from Docker)
+* [lmod](https://lmod.readthedocs.io/en/latest/index.html) installed, which can allow you to load additional software. Just run `module spider` to see what's available.
+* [SLURM](https://slurm.schedmd.com/slurm.html) to administer the cluster queues and provide CLI programs for interacting with it
+* [Singularity](https://sylabs.io/) to allow running software from containers (including conversion from Docker)
 
 ## Guides
 
- * Your own institution's guides and trainings
- * [Aalto Scientitic Computing ](https://scicomp.aalto.fi/)
+* Your own institution's guides and trainings
+* [Aalto Scientitic Computing ](https://scicomp.aalto.fi/)
 
 ## Containers
 
- * [Singularity](https://sylabs.io/) - Container runtime which must be installed by your cluster administrator. It can run convert Docker images. 
- * [udocker](https://github.com/indigo-dc/udocker) - Docker compatible CLI, which does not require action from your cluster administrator, but can use Singularity as a backend if it's available.
- * [singreqrun](https://github.com/frankier/singreqrun/) - Shim to allow running programs from the host from within a Singularity container
+* [Singularity](https://sylabs.io/) - Container runtime which must be installed by your cluster administrator. It can run convert Docker images. 
+* [udocker](https://github.com/indigo-dc/udocker) - Docker compatible CLI, which does not require action from your cluster administrator, but can use Singularity as a backend if it's available.
+* [singreqrun](https://github.com/frankier/singreqrun/) - Shim to allow running programs from the host from within a Singularity container
 
 ## Workflow managers and  distributed computing frameworks
 
- * [Snakemake](https://github.com/snakemake/snakemake) - File based processing pipeline framework with workflows written on Python but additional support for CLI programs, Julia and R  with SLURM support through either:
-   * Direct configuration using the `--cluster`` flag. See for example [this tutorial](https://carpentries-incubator.github.io/workflows-snakemake/09-cluster/index.html).
-   * Using the [SLURM Snakemake profile](https://github.com/Snakemake-Profiles/slurm)
-   * Using the KISS alternative [smk-simple-slurm](https://github.com/jdblischak/smk-simple-slurm)
-   * Using [singslurm2](https://github.com/frankier/singslurm2) which allows Snakemake to spawn SLURM jobs from within a Singularity container
-   * [Guide at Software Carpentries incubator](https://carpentries-incubator.github.io/workflows-snakemake/)
-   * Using its DRMAA support but this is not recoomended for SLURM since its own DRMAA support is not maintained
- * [Ray](https://www.ray.io/) - Python-based distributed computing framework including tools for hyperparamter search
+* [Snakemake](https://github.com/snakemake/snakemake) - File based processing pipeline framework with workflows written on Python but additional support for CLI programs, Julia and R  with SLURM support through either:
+  * Direct configuration using the `--cluster`` flag. See for example [this tutorial](https://carpentries-incubator.github.io/workflows-snakemake/09-cluster/index.html).
+  * Using the [SLURM Snakemake profile](https://github.com/Snakemake-Profiles/slurm)
+  * Using the KISS alternative [smk-simple-slurm](https://github.com/jdblischak/smk-simple-slurm)
+  * Using [singslurm2](https://github.com/frankier/singslurm2) which allows Snakemake to spawn SLURM jobs from within a Singularity container
+  * [Guide at Software Carpentries incubator](https://carpentries-incubator.github.io/workflows-snakemake/)
+  * Using its DRMAA support but this is not recoomended for SLURM since its own DRMAA support is not maintained
+* [Ray](https://www.ray.io/) - Python-based distributed computing framework including tools for hyperparamter search
    * SLURM support through [yaspi](https://github.com/albanie/yaspi)
- * [Nextflow](https://www.nextflow.io/) - 
-   * SLURM suppor though [its built-in SLURM executor](https://www.nextflow.io/docs/latest/executor.html#slurm)  
- * [bpipe](https://github.com/ssadedin/bpipe) Workflow manager with cluster support
- * [toil](https://toil.readthedocs.io/en/releases-3.6.x/index.html) Workflow manager with [batch system support](https://toil.readthedocs.io/en/releases-3.6.x/batchSystem.html)
+* [Nextflow](https://www.nextflow.io/) - 
+  * SLURM suppor though [its built-in SLURM executor](https://www.nextflow.io/docs/latest/executor.html#slurm)  
+* [bpipe](https://github.com/ssadedin/bpipe) Workflow manager with cluster support
+* [toil](https://toil.readthedocs.io/en/releases-3.6.x/index.html) Workflow manager with [batch system support](https://toil.readthedocs.io/en/releases-3.6.x/batchSystem.html)
 
 ## SLURM wrappers and libraries
 
- * [yaspi](https://github.com/albanie/yaspi) - A Python-based SLURM wrapper based on job arrays
- * [SEML](https://github.com/TUM-DAML/seml) - SEML: Slurm Experiment Management Library. Integration of the sacred experiment manager and SLURM.
- * [pyslurm](https://github.com/PySlurm/pyslurm) - Python library for interfacing with SLURM
- * [slurmpy](https://github.com/brentp/slurmpy) - Small Python library for starting SLURM jobs
- * [stubl](https://github.com/ubccr/stubl) - Utilities for SLURM including wrappers for job launching and reporting
+* [yaspi](https://github.com/albanie/yaspi) - A Python-based SLURM wrapper based on job arrays
+* [SEML](https://github.com/TUM-DAML/seml) - SEML: Slurm Experiment Management Library. Integration of the sacred experiment manager and SLURM.
+* [pyslurm](https://github.com/PySlurm/pyslurm) - Python library for interfacing with SLURM
+* [slurmpy](https://github.com/brentp/slurmpy) - Small Python library for starting SLURM jobs
+* [stubl](https://github.com/ubccr/stubl) - Utilities for SLURM including wrappers for job launching and reporting
 
 ## Networking
 
- * [sshuttle](https://github.com/sshuttle/sshuttle) - This program can help if you need to connect from outside of campus and the VPN doesn't get you where you want.
- * [lsyncd](https://github.com/lsyncd/lsyncd) - A program to sync your files to a remote server, e.g. a HPC login node. This allows a workflow where you can develop and run smoke tests locally, and then seemlessly switch to HPC for full runs.
+* [sshuttle](https://github.com/sshuttle/sshuttle) - This program can help if you need to connect from outside of campus and the VPN doesn't get you where you want.
+* [lsyncd](https://github.com/lsyncd/lsyncd) - A program to sync your files to a remote server, e.g. a HPC login node. This allows a workflow where you can develop and run smoke tests locally, and then seemlessly switch to HPC for full runs.
 
 ## Fancy shell sessions
 
- * [mosh](https://mosh.org/) - Drop free, low latency faked SSH sessions
- * [EternalTerminal](https://github.com/MisterTea/EternalTerminal) - Another approach to drop free SSH sessions
- * [xxh](https://github.com/xxh/xxh) - Bring your own shell and config to shared computing environments
- * [kitty](https://sw.kovidgoyal.net/kitty/) - Terminal supporting image display
- * [Euporie](https://github.com/joouha/euporie) - Jupyter notebooks in the terminal including support for image display with kitty
- * [tmux](https://github.com/tmux/tmux) / [GNU Screen](https://www.gnu.org/software/screen/) - Terminal multiplexers, which allow running multiple sessions and detatching and reattaching to terminal sessions
+* [mosh](https://mosh.org/) - Drop free, low latency faked SSH sessions
+* [EternalTerminal](https://github.com/MisterTea/EternalTerminal) - Another approach to drop free SSH sessions
+* [xxh](https://github.com/xxh/xxh) - Bring your own shell and config to shared computing environments
+* [kitty](https://sw.kovidgoyal.net/kitty/) - Terminal supporting image display
+* [Euporie](https://github.com/joouha/euporie) - Jupyter notebooks in the terminal including support for image display with kitty
+* [tmux](https://github.com/tmux/tmux) / [GNU Screen](https://www.gnu.org/software/screen/) - Terminal multiplexers, which allow running multiple sessions and detatching and reattaching to terminal sessions
