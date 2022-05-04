@@ -34,6 +34,8 @@ Every cluster is different. Always consult your own institutions. The most commo
    * SLURM support through [yaspi](https://github.com/albanie/yaspi)
  * [Nextflow](https://www.nextflow.io/) - 
    * SLURM suppor though [its built-in SLURM executor](https://www.nextflow.io/docs/latest/executor.html#slurm)  
+ * [bpipe](https://github.com/ssadedin/bpipe) Workflow manager with cluster support
+ * [toil](https://toil.readthedocs.io/en/releases-3.6.x/index.html) Workflow manager with [batch system support](https://toil.readthedocs.io/en/releases-3.6.x/batchSystem.html)
 
 ## SLURM wrappers and libraries
 
