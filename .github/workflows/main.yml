@@ -1,4 +1,5 @@
 name: CI
+on: push
 jobs:
   Awesome_Lint:
     runs-on: ubuntu-latest
