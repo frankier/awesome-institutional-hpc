@@ -44,6 +44,7 @@ Every cluster is different. Always consult your own institutions. The most commo
 * [pyslurm](https://github.com/PySlurm/pyslurm) - Python library for interfacing with SLURM
 * [slurmpy](https://github.com/brentp/slurmpy) - Small Python library for starting SLURM jobs
 * [stubl](https://github.com/ubccr/stubl) - Utilities for SLURM including wrappers for job launching and reporting
+* [lazyslurm](https://github.com/hill/lazyslurm) - Intuitive terminal UI for managing slurm jobs.
 
 ## Networking
 
