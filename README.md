@@ -1,6 +1,6 @@
 # Awesome institutional HPC  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-This list is made to help you get a productive development environment as a user of institutional HPC. Sometimes making do with less tools is better for operational complexity, on the other hand these tools have generally been written to solve real problems, so it is worth at least knowing that they exist. Tools targetted at institutional HPC tend to have poor visibility since traditionally all tools are provided directly by the operator of the cluster, causing effort to be siloed. Hopefully this list helps a bit!
+This list is made to help you get a productive development environment as a user of institutional HPC. For an awesome list aimed at those administering HPC clusters see [Awesome HPC](https://github.com/dstdev/awesome-hpc). Sometimes making do with less tools is better for operational complexity, on the other hand these tools have generally been written to solve real problems, so it is worth at least knowing that they exist. Tools targetted at institutional HPC tend to have poor visibility since traditionally all tools are provided directly by the operator of the cluster, causing effort to be siloed. Hopefully this list helps a bit!
 
 ## Tools provided for you
 
