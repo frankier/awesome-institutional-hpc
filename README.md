@@ -1,4 +1,4 @@
-# Awesome Institutional HPC  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Awesome Institutional HPC  [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 This list is made to help you get a productive development environment as a user of institutional HPC. For an awesome list aimed at those administering HPC clusters see [Awesome HPC](https://github.com/dstdev/awesome-hpc). Sometimes making do with less tools is better for operational complexity, on the other hand these tools have generally been written to solve real problems, so it is worth at least knowing that they exist. Tools targetted at institutional HPC tend to have poor visibility since traditionally all tools are provided directly by the operator of the cluster, causing effort to be siloed. Hopefully this list helps a bit!
 
@@ -6,14 +6,15 @@ This list is made to help you get a productive development environment as a user
 
 Every cluster is different. Always consult your own institutions. The most common tools across instituional HPC clusters are:
 
-* [lmod](https://lmod.readthedocs.io/en/latest/index.html) - A tool allows you to load additional software packaged as modules. Just run `module spider` to see what's available.
+* [lmod](https://lmod.readthedocs.io/en/latest/index.html) -- A tool allows you to load additional software packaged as modules. Just run `module spider` to see what's available.
 * [SLURM](https://slurm.schedmd.com/slurm.html) -- A job scheduler for HPC clusters which includes CLI programs you will run to interact with it
+<!--lint disable double-link-->
 * [Apptainer](https://apptainer.org/) -- A container runtime, which supports including conversion OCI (Docker compatible) images.
 
 ## Guides
 
 * Your own institution's guides and trainings
-* [Aalto Scientitic Computing ](https://scicomp.aalto.fi/)
+* [Aalto Scientitic Computing](https://scicomp.aalto.fi/)
 
 ## Containers
 
