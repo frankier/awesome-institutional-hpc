@@ -43,7 +43,7 @@ Every cluster is different. Always consult your own institutions. The most commo
 ## SLURM wrappers and libraries
 
 * [yaspi](https://github.com/albanie/yaspi) - A Python-based SLURM wrapper based on job arrays.
-* [SEML](https://github.com/TUM-DAML/seml) - SEML: Slurm Experiment Management Library. Integration of the sacred experiment manager and SLURM.
+* [SEML](https://github.com/TUM-DAML/seml) - Slurm Experiment Management Library (SEML). Integration of the sacred experiment manager and SLURM.
 * [pyslurm](https://github.com/PySlurm/pyslurm) - Python library for interfacing with SLURM.
 * [slurmpy](https://github.com/brentp/slurmpy) - Small Python library for starting SLURM jobs.
 * [stubl](https://github.com/ubccr/stubl) - Utilities for SLURM including wrappers for job launching and reporting.
