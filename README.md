@@ -48,6 +48,7 @@ Every cluster is different. Always consult your own institutions. The most commo
 * [slurmpy](https://github.com/brentp/slurmpy) - Small Python library for starting SLURM jobs.
 * [stubl](https://github.com/ubccr/stubl) - Utilities for SLURM including wrappers for job launching and reporting.
 * [lazyslurm](https://github.com/hill/lazyslurm) - Intuitive terminal UI for managing slurm jobs.
+* [slurm-why](https://github.com/ajinkyakadam/slurm-why) - CLI that turns confusing Slurm job states into a plain-English Diagnosis -> Why -> Fix, instead of decoding raw sacct/squeue/scontrol output by hand.
 
 ## Networking
 
