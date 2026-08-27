@@ -50,6 +50,7 @@ Every cluster is different. Always consult your own institutions. The most commo
 * [lazyslurm](https://github.com/hill/lazyslurm) - Intuitive terminal UI for managing slurm jobs.
 * [slurm-why](https://github.com/ajinkyakadam/slurm-why) - CLI that turns confusing Slurm job states into a plain-English Diagnosis -> Why -> Fix, instead of decoding raw sacct/squeue/scontrol output by hand.
 * [slurm-bridge](https://github.com/andystorrs/slurm-bridge) - CLI helper for SSH-accessible SLURM clusters: sync files, submit jobs, check status, pull outputs back, and write receipts/manifests.
+* [HPC Client GUI](https://github.com/mskomek/hpc-client-gui) - Cross-platform desktop client for SSH-accessible Slurm clusters, with SFTP file management, job submission and monitoring, terminal workflows, and optional X11 forwarding. Requires no server-side installation.
 
 ## Networking
 
